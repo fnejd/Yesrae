@@ -1,33 +1,17 @@
-# 🎵 YESRAE
 
-## A304 - 노래 추천 프로젝트 (빅데이터 추천)
-
-<!-- 필수 항목 -->
-
-## 카테고리
-
-| Application                       | Domain                                | Language                      | Framework                               |
-| --------------------------------- | ------------------------------------- | ----------------------------- | --------------------------------------- |
-| :white_check_mark: Desktop Web    | :black_square_button: AI              | :white_check_mark: JavaScript | :black_square_button: Vue.js            |
-| :black_square_button: Mobile Web  | :white_check_mark: Big Data           | :white_check_mark: TypeScript | :white_check_mark: React                |
-| :white_check_mark: Responsive Web | :black_square_button: Blockchain      | :black_square_button: C/C++   | :black_square_button: Angular           |
-| :black_square_button: Android App | :black_square_button: IoT             | :black_square_button: C#      | :black_square_button: Node.js           |
-| :black_square_button: iOS App     | :black_square_button: AR/VR/Metaverse | :white_check_mark: Python     | :white_check_mark: Flask/Django/FastAPI |
-| :black_square_button: Desktop App | :black_square_button: Game            | :white_check_mark: Java       | :white_check_mark: Spring/Springboot    |
-|                                   |                                       | :black_square_button: Kotlin  |                                         |
-
-<!-- 필수 항목 -->
+# 🎵 YESRAE 노래 추천 프로젝트 (빅데이터 추천)
 
 ## 프로젝트 소개
 
 - 프로젝트명: **YESRAE**
 - 서비스 특징: 사용자 취향 기반 노래 추천 서비스
 - 주요 기능
-  - 노래 플레이리스트 추천
-  - 유사도 기반 노래 퀴즈
+  - 노래 플레이리스트
+  - 유사도 기반 노래 퀴즈 (노맨틀)
   - 노래 이상형 월드컵
+  - 이상형 월드컵 결과 바탕의 노래 추천
 - 주요 기술
-  - Annoy를 이용한 ANN 알고리즘
+  - Annoy를 이용한 ANN 알고리즘 (노래 추천)
   - OAuth2.0, JWT
   - REST API
 - 참조 리소스
@@ -38,10 +22,50 @@
 - 배포 환경
   <!-- 웹 서비스, 랜딩 페이지, 프로젝트 소개 등의 배포 URL 기입 -->
   - URL: [https://j9a304.p.ssafy.io/](https://j9a304.p.ssafy.io/)
-  <!-- 로그인이 필요한 경우, 사용 가능한 테스트 계정(ID/PW) 기입 -->
-  - 테스트 계정: X
 
-<!-- 자유 양식 -->
+
+## 프로젝트 상세 설명
+
+### 개발 환경
+
+### Frontend
+
+- React (18)
+  - Recoil
+- TypeScript (5.2.2)
+- Tailwind CSS
+- Axios
+- pnpm
+- Vite
+- Node.js (18.17.1)
+
+### Backend
+
+- Java (17)
+- Spring Boot (3.1.3)
+- Gradle (3.1.3)
+- dependencies
+  - Spring Security
+  - JPA
+  - querydsl
+  - aws s3
+- MySQL (8.0.33)
+- Redis (3.0.504)
+- Fast API (0.103.1)
+
+### Server
+
+- AWS EC2
+
+## Skills
+
+![사용기술](./img/Yesrae_Skills.jpg)
+
+---
+
+## 소프트웨어 아키텍처
+
+![아키텍쳐](/img/Yesrae_architecture.jpg)
 
 ## 팀 소개
 
@@ -115,51 +139,6 @@
     </td>
   </tr>
 </table>
-
-<!-- 자유 양식 -->
-
-## 프로젝트 상세 설명
-
-### 개발 환경
-
-### Frontend
-
-- React (18)
-  - Recoil
-- TypeScript (5.2.2)
-- Tailwind CSS
-- Axios
-- pnpm
-- Vite
-- Node.js (18.17.1)
-
-### Backend
-
-- Java (17)
-- Spring Boot (3.1.3)
-- Gradle (3.1.3)
-- dependencies
-  - Spring Security
-  - JPA
-  - querydsl
-  - aws s3
-- MySQL (8.0.33)
-- Redis (3.0.504)
-- Fast API (0.103.1)
-
-### Server
-
-- AWS EC2
-
-## Skills
-
-![사용기술](./img/Yesrae_Skills.jpg)
-
----
-
-## 소프트웨어 아키텍처
-
-![아키텍쳐](/img/Yesrae_architecture.jpg)
 
 ---
 
@@ -378,4 +357,68 @@ C:.
 
 ![ERD](./img/YESRAE_ERD.png)
 
-<!-- 개발 환경, 기술 스택, 시스템 구성도, ERD, 기능 상세 설명 등 -->
+## 화면
+
+### 메인화면 (플레이 리스트)
+
+- 플레이 리스트 목록을 바로 확인 가능합니다.
+
+![메인화면](/img/Yesrae_메인화면.png)
+
+### 마이페이지
+
+- 마이페이지에서 회원이 좋아요한 플레이 리스트, 등록한 플레이 리스트 확인이 가능합니다.
+
+![마이페이지](/img/Yesrae_마이페이지.PNG)
+
+### 음악 플레이어
+
+- 플레이 리스트 수록된 재생
+
+![음악 플레이어](/img/Yesrae_음악플레이어.PNG)
+
+### 플레이 리스트 등록
+
+- 플레이 리스트 이미지, 제목, 설명, 태그 와 플레이 리스트 노래를 등록할 수 있습니다.
+
+![음악 플레이 리스트 등록](/img/Yesrae_플레이리스트등록.PNG)
+
+### 로그인 페이지
+
+- 카카오 로그인과 구글 로그인이 가능 합니다.
+
+![로그인](/img/Yesrae_로그인페이지.PNG)
+
+### 노래 상세 페이지
+
+- spotify 에서 제공하는 노래 특성 정보들을 확인할 수 있습니다.
+
+![노래상세](/img/Yesrae_노래상세.png)
+
+### 노래 퀴즈 페이지
+
+- 노래 제목을 입력하면 저장되어 있는 곡들 중 해당 제목과 일치하는 가장 유사도가 높은 곡의 정답곡과의 유사도와 유사도 순위 결과가 나타납니다.
+
+![노래상세](/img/Yesrae_노맨틀.png)
+
+### 이상형 월드컵
+
+- 이상형 월드컵 시작 화면입니다. 몇강을 할 것인지 선택이 가능합니다.  
+
+
+![이상형 월드컵](/img/Yesrae_이상형.png)
+
+- 이상형 월드컵 진행 화면입니다.
+
+![이상형 월드컵 진행](/img/Yesrae_이상형월드컵진행.png)
+
+- 이상형 월드컵 결과 화면에서는 1위에서 4위까지의 결과가 나타납니다.
+
+![이상형 월드컵 결과](/img/Yesrae_이상형월드컵결과.png)
+
+### 노래 추천
+
+- 이상형 월드컵의 1위에서 4위곡들을 바탕으로 총 8곡을 추천합니다.
+
+![노래 추천 진행](/img/Yesrae_추천진행.png)
+![노래 추천 결과](/img/Yesrae_노래추천결과.png)
